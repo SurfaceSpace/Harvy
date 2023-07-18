@@ -77,7 +77,19 @@
     }
     .first-word, .second-word {
       vertical-align: center;
-    }  
+    } 
+        @media screen and (min-width: 768px) {
+  .bread-container {
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height if needed */
+  }
+  @media screen and (min-width: 768px) {
+  .bread {
+    width: 300px; /* Adjust the width for desktop */
+      }
+      }
   </style>
   <script>
     function toggleInfo(breadId) {
