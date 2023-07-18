@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Breads</title>
+  <style>
+    .bread-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      color: #0077be;
+      padding: 20px;
+    }
+    .bread {
+      margin: 10px;
+      padding: 10px;
+      width: 200px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    .bread img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .info-button {
+      margin-top: 5px;
+      padding: 5px 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .info {
+      display: none;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    body {
+      background-image: url("sea.gif");
+      padding: 50px;
+      margin:0;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: white;
+    }
+    h1 {
+      background-image: url("Seal2.gif");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      margin: 0;
+      padding: 10px;
+      background-repeat: no-repeat;
+      color: white;
+      position:fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+    }
+    .second-word {
+      position: fixed;
+      right: 15px
+      
+    }
+    .custome-heading {
+      color: #0077be;
+      text-shadow:2px 1px black;
+    }
+    .first-word, .second-word {
+      vertical-align: center;
+    }  
+  </style>
+  <script>
+    function toggleInfo(breadId) {
+      var info = document.getElementById('info-' + breadId);
+      info.style.display = info.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</head>
+<body>
+  <h1 class="custome-heading">
+    <span class="first-word">Bread
+  <span class="second-word">Seal</span></h1>
+  <div class="bread-container">
+    <div class="bread">
+      <img src="seaweedbread.jpeg" alt="Bread 1">
+      <h3></h3>
+      <button class="info-button" onclick="toggleInfo(1)">Seaweed Bread</button>
+      <div class="info" id="info-1">
+        <p>Seaweed bread is a delightful and unique bread variation that incorporates seaweed as a key ingredient. This specialty bread showcases the flavors and nutritional benefits of edible seaweed in a delicious and innovative way.</p>
+      </div>
+    </div>
+
+    <div class="bread">
+      <img src="ink.jpg" alt="Bread 2">
+      <h3></h3>
+      <button class="info-button" onclick="toggleInfo(2)">Squid Ink Bread</button>
+      <div class="info" id="info-2">
+        <p>Squid ink bread is a unique type of bread that incorporates squid ink into the dough, resulting in a distinct appearance, flavor, and aroma. Squid ink, also known as cuttlefish ink, is a dark liquid extracted from the ink sac of squid or cuttlefish.</p>
+      </div>
+    </div>
+
+    <div class="bread">
+      <img src="shrimp.jpeg" alt="Bread 2">
+      <h3></h3>
+      <button class="info-button" onclick="toggleInfo(3)">Shrimp Bread</button>
+      <div class="info" id="info-3">
+        <p>Shrimp bread is a delectable bread variety that incorporates shrimp into the dough, infusing it with a delightful seafood flavor and adding a touch of texture. This unique bread creation combines the savory taste of shrimp with the soft and fluffy texture of bread.</p>
+      </div>
+    </div>
+  
+  </div>
+</body>
+</html>
+
+
+
+
+
+  
+     
